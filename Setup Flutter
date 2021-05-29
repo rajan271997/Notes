@@ -1,30 +1,0 @@
-*Setup Flutter*
-
-Flutter Setup for Mac : https://flutter.dev/docs/get-started/install/macos
-
-
-1. Download the following installation bundle https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_2.2.1-stable.zip 
-2. Unzip the folder by double click on the zip folder or by using third party tool .
-3. Go to the terminal and change to directory to the root of the flutter folder.   For Example : If the flutter folder is in downloads, You have to change the directory to the downloads folder.
-4. Set the flutter path in terminal or command line :  export PATH="$PATH:`pwd`/flutter/bin"
-5. Great !! Now you are ready to run flutter.
-
-
-
-Sometimes We have to add some dependencies to run flutter .
-
- To check these dependencies , run the following command : 
-    “flutter doctor”
-
-If there is any dependencies to show, you can simply check the suggestions and or use google to solve.
-
-To set the path default for flutter : 
-
-1. Open the terminal and run the command :  “nano ~/.bash_profile”
-2. Add the following line and change [PATH_TO_FLUTTER_GIT_DIRECTORY] to be the path where you cloned Flutter’s Git repository is: “export PATH=[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin:$PATH”  For Example :  “export PATH=~/Downloads/flutter/bin:$PATH”
-3. Press Ctrl + X and when it asks you to save the file, choose Yes
-4. Run source $HOME/.bash_profile to refresh the current window or restart the terminal.
-5. echo $PATH
-
-Notice that [PATH_TO_FLUTTER_GIT_DIRECTORY] is where you installed Flutter SDK, not the location of your app
-Instead of nano, you can use any text editor to edit file ~/.bash_profile.
